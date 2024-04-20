@@ -1,0 +1,361 @@
+@font-face {
+    font-family: play display;
+    src: url(./PlayfairDisplay-Regular.9647c7fa.ttf);
+}
+:root{
+    --pre:play display
+}
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+font-family: gilroy;
+}
+html, body{
+width: 100%;
+ height: 100%;
+}
+#navbar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    width: 100%;
+    height: 140px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 60px;
+    background-color: transparent;
+}
+#navbar h4{
+    font-size: 20px;
+    font-weight: 500;
+}
+#navbar svg{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    fill: white;
+}
+#navbar i{
+    font-size: 30px;
+    color: #fff;
+}
+#w{
+    position: fixed;
+    top: 40%;
+    left: 0;
+    width: 50px;
+    height: 180px;
+    background-color: black;
+    color: #fff;
+    z-index: 99;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    padding: 0 20px;
+}
+#w h1{
+    font-family: gilroy;
+    font-weight: 600;
+}
+#w h4{
+    transform: rotate(-90deg);
+    white-space: nowrap;
+    font-family: gilroy;
+    margin-bottom: 50px;
+    font-size: 13px;
+}
+#main{
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    background-color: #FFFAF0;
+}
+.page{
+    position: relative;
+    height: 100vh;
+    width: 100%;
+}
+#page1 #welcome{
+    width: 30%;
+    height: 40%;
+    position: absolute;
+    right: 5%;
+    top: 35%;
+    text-align: center;
+}
+#welcome h1 {
+    margin-bottom: 15px;
+    line-height: 1.1;
+}
+#welcome h1 span{
+    font-family: play display;
+    font-size: 70px;
+    color: #fff;
+    font-weight: 500;
+
+}
+#welcome h4{
+    width: 50%;
+    margin: 0 auto;
+
+}
+#welcome h4 span{
+    color: #fff;
+    font-size: 20px;
+    font-weight: 500;
+}
+#page2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 70vh;
+}
+#page2 h1{
+    font-size: 100px;
+    text-align: center;
+    font-family: var(--pre);
+    font-weight: 500;
+}
+#page2 img{
+    position: absolute;
+    width: 70%;
+    left: 13%;
+    z-index: 9;
+}
+
+#page3{
+    text-align: center;
+    padding: 100px 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+#page3 h4{
+    font-family: gilroy;
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 40px;
+}
+#page3 h2 span{
+    font-family: play display;
+    font-size: 60px;
+    font-weight: 500;
+    line-height: 1.1;
+}
+
+#page4{
+    text-align: center;
+    padding: 100px 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+#page4 h4{
+    font-family: gilroy;
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 40px;
+}
+#page4 h2 span{
+    font-family: play display;
+    font-size: 60px;
+    font-weight: 500;
+    line-height: 1.1;
+}
+#page5{
+    position: relative;
+    height: 100vh;
+    width: 100%;
+}
+#page5 #shadow{
+    position: absolute;
+    right: 0%;
+    top: 70%;
+    width: 50%;
+}
+#page5 #vid{
+    position: absolute;
+    width: 45%;
+    right: 4%;
+    top: 8%;
+    object-fit: cover;
+    object-position: bottom;
+    z-index: 9;
+    user-select: none;
+}
+#page5 #scroll{
+    position: absolute;
+    top: 60%;
+    height: 300vh;
+    width: 100%;
+}
+#page5 #scroll .container{
+    height: 100vh;
+    width: 100%;
+}
+#scroll .container .sub-con{
+    width: 50%;
+    height: 50%;
+    padding: 60px;
+}
+.container .sub-con h4{
+    font-size: 22px;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+.container .sub-con h2{
+    font-size: 45px;
+    font-weight: 500;
+    font-family: var(--pre);
+}
+#logo{
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    flex-direction: column;
+    gap: 18px;
+    padding: 0 50px;
+}
+#logo .elem{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    height: 20%;
+}
+#over-pg6{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    z-index: 99;
+    padding: 60px;
+    display: flex;
+    align-items: center;
+    justify-content:flex-start;
+    padding-right: 500px;
+}
+#over-pg6 h4 span{
+    font-family: play display;
+    font-size: 48px;
+    font-weight: 500;
+    line-height: 1.1;
+    color: #fff;
+}
+#page7{
+    padding: 60px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+}
+#page7 h4{
+    font-family: gilroy;
+    font-size: 25px;
+    font-weight: 500;
+    margin-bottom: 40px;
+}
+#page7 h2{
+    font-family: play display;
+    font-size: 60px;
+    font-weight: 500;
+    line-height: 1.1;
+    width: 65%;
+}
+#page8{
+    display: flex;
+    align-items: center;
+}
+#page8 #left{
+    width: 50%;
+    height: 100%;
+    padding:120px 60px;
+}
+#page8 #left h4,#page8 h5{
+    display: inline-block;
+    position: relative;
+    font-size: 20px;
+    font-weight: 500;
+    color: #f99cb3;
+    overflow: hidden;
+    line-height: 1.5;
+    padding-bottom: 5px;
+}
+#page8  h5::after{
+    content: "";
+    position: absolute;
+   bottom: 0;
+   left: -60%;
+    width: 100%;
+    height: 10%;
+    background-color: #f99cb3;
+    transition: all ease 0.5s;
+}
+
+#page8 h5:hover::after{
+    left: 50%;
+}
+#page8 #left h1{
+    font-family: var(--pre);
+    font-size: 62px;
+    line-height: 1.1;
+    font-weight: 500;
+    margin-bottom: 120px;
+    margin-top: 15px;
+}
+
+#page8 #right{
+    width: 50%;
+    height: 100%;
+    padding: 100px;
+}
+#page8 #right h4{
+    font-size: 20px;
+    font-weight: 400;
+    margin-bottom: 50px;
+}
+
+#cursor{
+    height: 20px;
+    width: 20px;
+    background-color: rgb(255, 255, 255);
+    position: fixed;
+    z-index: 99;
+    border-radius: 50%;
+    mix-blend-mode: difference;
+}
+#loader{
+    height: 100vh;
+    width: 100%;
+    background-color: #F4D5DE;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 111;
+    
+}
+#loader svg{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    animation-name: loader;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+@keyframes loader {
+    0%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0.4;
+    }
+}
